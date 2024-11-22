@@ -5,8 +5,8 @@
 }
 
 body {
-  background-color: #f5f5f5;
-  color: #444;
+  background-color: #fafafa; /* Subtle light background */
+  color: #333; /* Softer text color */
   font-family: 'Poppins', sans-serif;
   display: flex;
   flex-direction: column;
@@ -17,33 +17,37 @@ body {
 }
 
 h1 {
-  color: rgb(179, 131, 226);
+  color: #6c63ff; /* Modern purple shade */
   font-size: 10rem;
   text-align: center;
-  opacity: 0.4;
+  opacity: 0.2;
 }
 
 form {
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Softer shadow for a clean effect */
+  border-radius: 8px;
   max-width: 100%;
   width: 400px;
 }
 
 .input {
   border: none;
-  color: #444;
-  font-size: 2rem;
-  padding: 1rem 2rem;
+  color: #333;
+  font-size: 1.8rem;
+  padding: 1.2rem 1.5rem;
   display: block;
   width: 100%;
+  border-bottom: 1px solid #e0e0e0; /* Subtle border for input separation */
 }
 
 .input::placeholder {
-  color: #d5d5d5;
+  color: #aaa; /* Softer placeholder color */
 }
 
 .input:focus {
-  outline-color: rgb(179, 131, 226);
+  outline: none;
+  border-bottom: 1px solid #6c63ff; /* Consistent purple highlight */
 }
 
 .FocusFlow {
@@ -54,19 +58,26 @@ form {
 }
 
 .FocusFlow li {
-  border-top: 1px solid #e5e5e5;
+  border-top: 1px solid #f0f0f0; /* Softer divider lines */
   cursor: pointer;
   font-size: 1.5rem;
   padding: 1rem 2rem;
+  transition: background-color 0.3s, color 0.3s; /* Smooth hover effect */
+}
+
+.FocusFlow li:hover {
+  background-color: #f9f9ff; /* Light lavender hover effect */
+  color: #6c63ff; /* Consistent purple for hover text */
 }
 
 .FocusFlow li.completed {
-  color: #b6b6b6;
+  color: #999;
   text-decoration: line-through;
 }
 
 small {
-  color: #b5b5b5;
-  margin-top: 3rem;
+  color: #999;
+  margin-top: 2rem;
   text-align: center;
+  font-size: 0.9rem;
 }
