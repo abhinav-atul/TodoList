@@ -46,21 +46,21 @@ form {
   outline-color: rgb(179, 131, 226);
 }
 
-.todos {
+.FocusFlow {
   background-color: #fff;
   padding: 0;
   margin: 0;
   list-style-type: none;
 }
 
-.todos li {
+.FocusFlow li {
   border-top: 1px solid #e5e5e5;
   cursor: pointer;
   font-size: 1.5rem;
   padding: 1rem 2rem;
 }
 
-.todos li.completed {
+.FocusFlow li.completed {
   color: #b6b6b6;
   text-decoration: line-through;
 }

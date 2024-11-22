@@ -1,11 +1,11 @@
 const form = document.getElementById('form')
 const input = document.getElementById('input')
-const todosUL = document.getElementById('todos')
+const FocusFlowUL = document.getElementById('FocusFlow')
 
-const todos = JSON.parse(localStorage.getItem('todos'))
+const FocusFlow = JSON.parse(localStorage.getItem('FocusFlow'))
 
-if(todos) {
-    todos.forEach(todo => addTodo(todo))
+if(FocusFlow) {
+    FocusFlow.forEach(todo => addTodo(todo))
 }
 
 form.addEventListener('submit', (e) => {
@@ -41,7 +41,7 @@ function addTodo(todo) {
             updateLS()
         }) 
 
-        todosUL.appendChild(todoEl)
+        FocusFlowUL.appendChild(todoEl)
 
         input.value = ''
 
@@ -50,16 +50,16 @@ function addTodo(todo) {
 }
 
 function updateLS() {
-    todosEl = document.querySelectorAll('li')
+    FocusFlowEl = document.querySelectorAll('li')
 
-    const todos = []
+    const FocusFlow = []
 
-    todosEl.forEach(todoEl => {
-        todos.push({
+    FocusFlowEl.forEach(todoEl => {
+        FocusFlow.push({
             text: todoEl.innerText,
             completed: todoEl.classList.contains('completed')
         })
     })
 
-    localStorage.setItem('todos', JSON.stringify(todos))
+    localStorage.setItem('FocusFlow', JSON.stringify(FocusFlow))
 }
