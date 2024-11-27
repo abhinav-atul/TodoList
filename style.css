@@ -5,8 +5,8 @@
 }
 
 body {
-  background-color: #fafafa; /* Subtle light background */
-  color: #333; /* Softer text color */
+  background-color: #1e1e1e; /* Dark background */
+  color: #d4d4d4; /* Light text color */
   font-family: 'Poppins', sans-serif;
   display: flex;
   flex-direction: column;
@@ -17,67 +17,61 @@ body {
 }
 
 h1 {
-  color: #6c63ff; /* Modern purple shade */
+  color: rgb(179, 131, 226);
   font-size: 10rem;
   text-align: center;
-  opacity: 0.2;
+  opacity: 0.8; /* Adjusted for better visibility */
 }
 
 form {
-  background-color: #ffffff;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Softer shadow for a clean effect */
-  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7); /* Darker shadow for better contrast */
   max-width: 100%;
   width: 400px;
+  background-color: #2c2c2c; /* Slightly darker background */
+  border-radius: 8px; /* Added for a smoother look */
 }
 
 .input {
   border: none;
-  color: #333;
-  font-size: 1.8rem;
-  padding: 1.2rem 1.5rem;
+  color: #d4d4d4; /* Lighter text for input */
+  font-size: 2rem;
+  padding: 1rem 2rem;
   display: block;
   width: 100%;
-  border-bottom: 1px solid #e0e0e0; /* Subtle border for input separation */
+  background-color: #3c3c3c; /* Dark input background */
+  border-radius: 4px; /* Slightly rounded corners */
 }
 
 .input::placeholder {
-  color: #aaa; /* Softer placeholder color */
+  color: #888; /* Light gray placeholder */
 }
 
 .input:focus {
-  outline: none;
-  border-bottom: 1px solid #6c63ff; /* Consistent purple highlight */
+  outline-color: rgb(179, 131, 226);
 }
 
 .FocusFlow {
-  background-color: #fff;
+  background-color: #2c2c2c; /* Matching dark background */
   padding: 0;
   margin: 0;
   list-style-type: none;
 }
 
 .FocusFlow li {
-  border-top: 1px solid #f0f0f0; /* Softer divider lines */
+  border-top: 1px solid #444; /* Darker border */
   cursor: pointer;
   font-size: 1.5rem;
   padding: 1rem 2rem;
-  transition: background-color 0.3s, color 0.3s; /* Smooth hover effect */
-}
-
-.FocusFlow li:hover {
-  background-color: #f9f9ff; /* Light lavender hover effect */
-  color: #6c63ff; /* Consistent purple for hover text */
+  color: #d4d4d4; /* Light text color */
 }
 
 .FocusFlow li.completed {
-  color: #999;
+  color: #b6b6b6; /* Light gray for completed items */
   text-decoration: line-through;
 }
 
 small {
-  color: #999;
-  margin-top: 2rem;
+  color: #b5b5b5; /* Slightly lighter gray */
+  margin-top: 3rem;
   text-align: center;
-  font-size: 0.9rem;
 }
